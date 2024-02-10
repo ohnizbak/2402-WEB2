@@ -1,0 +1,174 @@
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 112px;
+    height: 100%;
+    padding-left: 16px;
+}
+
+.menu-container {
+    background-color: transparent;
+    width: 50px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+
+}
+
+.bar {
+    width: 26px;
+    height: 3px;
+    background-color: white;
+}
+
+main {
+    background-image: url(img/main_visual_fullscreen\ \(1\).jpg);
+    width: 100%;
+    height: 919px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: "AvenirLTPro-Heavy", "sdg-b", sans-serif;
+}
+
+.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-container {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-main > h2 {
+    font-size: 36px;
+    font-family: "AvenirLTPro-Heavy", "sdg-m", sans-serif;
+    color: #374553;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.section-main > h2::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0bb8ff;
+}
+
+.section-content {
+    margin-top: 16px;
+    margin-bottom: 56px;
+}
+
+.section-content > p {
+    font-size: 18px;
+    font-family: "AvenirLTPro-Heavy", "sdg-m", sans-serif;
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+#drive-socar {
+    width: 100%;
+    height: 444px;
+    background-color: #f7f8f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#drive-socar > p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #aaa;
+    text-align: center;
+    line-height: 120%;
+}
+
+.point {
+    color: #0bb8ff;
+}
+
+.rect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0bb8ff;
+    transform: skewX(-30deg) translateX(70%);
+}
+
+footer {
+    width: 100%;
+    height: 290px;
+    background-color: #28323c;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sns-container {
+    display: flex;
+    gap: 8px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container a {
+    color: #c5c8ce;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-container > .point {
+    color: white;
+}
