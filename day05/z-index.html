@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 60%;
+            aspect-ratio: 1;
+            background-color: pink;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+
+            /* position으로 겹쳐진 컨텐츠의 높낮이를 설정하는 기능으로, 값은 되도록 널널하게 사용하는것이 유지보수의 편의성에 좋다. */
+            z-index: 100;
+            /* 최대값 : 9,999 */
+        }
+
+        .box2 {
+            width: 60%;
+            aspect-ratio: 1;
+            background-color: cadetblue;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1번박스</div>
+    <div class="box2">2번박스</div>
+</body>
+</html>
