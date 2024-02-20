@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .basic-box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: bold;
+
+            transition: 1s;
+
+
+
+
+            /* transition의 속성 */
+
+
+
+            /* transition-duration : 지속시간 */
+                /* 가장 기본적인 속성이기 때문에 반드시 필요, transition에 시간값만 적으면 duration이 된다. */
+
+            /* transition-delay : 움직이기 전 대기시간 */
+                /* 여러개의 인터렉션을 동시에 작동할때 좀 더 역동적인 애니메이션을 만들 수 있다. (앵간하면 자바쑤로 하자^0^) */
+
+            /* transition-timing-function :가속도 함수 (기본값 : ease) */
+                /* 현실세계의 움직임과 기본값인 이지의 움직임이 매우 유사하기 때문에 기본값 사용 무난 */
+                /* 다른 가속도 표현하고싶을 때 가속도 함수 사이트 참고해서 원하는 가속도 복사해서 사용하면 됨 */
+
+            /* transition-property : 트랜지션 적용할 속성 세부 설정 */
+                /* 서로다른 속성에 각각 transition 설정을 할 수 있다. */
+                /* 속성은 순서로 매칭해 구분한다. */
+        }
+
+        .basic-box:hover {
+            transform: rotate(45deg);
+        }
+
+        .delay-test {
+            transition-delay: 1s;
+        }
+
+        .text-container {
+            width: 500px;
+        }
+
+        .text-container > * {
+            transform: translateY(50px);
+            opacity: 0;
+            transition: 0.2s;
+            /* transition 위치에 따라 나타날때만 적용 / 사라질때도 적용 선택 가능 */
+        }
+
+        .text-container:hover > * {
+            transform: none;
+            opacity: 1;
+            /* transition을 여기에 넣으면 나타날때만 애니메이션 작동 */
+        }
+
+        .text-container:hover > *:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .text-container:hover > *:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .text-container:hover > *:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .property-box {
+            background-color: pink;
+
+            display: flex;
+            justify-content: center;
+            align-self: center;
+
+            transition-property: width, height;
+            transition-duration: 1s;
+            transition-delay: 0s, 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="basic-box">
+        마우스를 올려보세요
+    </div>
+    
+    <div class="basic-box delay-test">
+        마우스를 올려보세요
+    </div>
+
+     <div class="text-container">
+        <h2>컨텐츠 제목</h2>
+        <h3>부제목 영역</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Impedit recusandae modi minima voluptate, quam ipsum tenetur obcaecati sequi porro tempore? 
+            Ab laborum corrupti dolorem quisquam eaque iste praesentium, nisi odit?</p>
+     </div>
+</body>
+</html>
