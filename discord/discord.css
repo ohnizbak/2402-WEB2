@@ -1,0 +1,30 @@
+:root {
+    --main-color : #5865f2;
+}
+
+header {
+    padding: 0 48px;
+    height: 64px;
+}
+
+.header-container {
+    width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-box {
+    display: flex;
+    gap: 16px;
+}
+
+.header-container > a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
