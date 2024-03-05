@@ -1,0 +1,52 @@
+
+
+main {
+    width: 100%;
+    height: 771px;
+    padding-top: 76px;
+    background-color: #f6f8fa;;
+}
+
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main-container img {
+    width: 540px;
+    height: 695px;
+}
+
+.main-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 122px;
+    margin-left: 32px;
+}
+
+.main-contents h1 {
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.sign-in-big {
+    height: 54px;
+    border: none;
+    background-color: #21c531;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.sign-up-big {
+    height: 54px;
+    border: 1px solid #ebebeb;;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    border-radius: 4px;
+}
+
+.links
