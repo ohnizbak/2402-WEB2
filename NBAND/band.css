@@ -1,4 +1,53 @@
+.header-container {
+    width: 1903;
+    height: 68px;
+    padding: 17px;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: space-between;
+}
 
+.logo-box {
+	background: url('../NBAND/img/spr_intro.png') no-repeat 0 -98px;
+	width: 79px;
+	height: 30px;
+}
+
+.link-box {
+    height: 35px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.link-box a {
+    text-decoration: none;
+}
+
+.lang-select {
+    color: #666;
+}
+
+.lang-selct::after {
+    /* 안된다으아ㅡ라얼아ㅓㄹ야ㅏㄴㅁ링ㄴㄹ */
+    content: '▼';
+}
+
+.sign-up {
+    color: #222;
+}
+
+.sign-in {
+    width: 88px;
+    height: 35px;
+    background-color: #21c531;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 2px;
+}
 
 main {
     width: 100%;
