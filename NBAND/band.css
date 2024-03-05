@@ -19,6 +19,7 @@ main {
 }
 
 .main-contents {
+    width: 370px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -32,6 +33,7 @@ main {
 }
 
 .sign-in-big {
+    width: 366px;
     height: 54px;
     border: none;
     background-color: #21c531;
@@ -41,6 +43,7 @@ main {
 }
 
 .sign-up-big {
+    width: 366px;
     height: 54px;
     border: 1px solid #ebebeb;;
     background-color: #ffffff;
@@ -49,4 +52,29 @@ main {
     border-radius: 4px;
 }
 
-.links
+.links {
+    height: 75px;
+    margin-top: 32px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links > li {
+    color: #444;
+}
+
+.link-hlight {
+    color: #21c531;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.section-container {
+
+}
+
+.club-main {
+    
+}
