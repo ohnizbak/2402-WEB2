@@ -265,6 +265,7 @@ footer {
     width: 100%;
     height: 120px;
     background-color: #2a3038;
+    bottom: 0;
 }
 
 .footer-container {
