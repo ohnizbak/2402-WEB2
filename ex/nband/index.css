@@ -4,6 +4,7 @@ img {
 }
 
 .hide-text {
+    /* 있는데 숨겨주는 속성 (클리핑마스크같은 느낌) */
     position: absolute;   
     clip: rect(1px 1px 1px 1px);
     clip-path: inset(0 0 99.9% 99.9%);
@@ -18,3 +19,14 @@ img {
 	height: 29px;
     display: block;
 }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* vs편집기 공부 */
+/* 버튼에 cursor:pointer; < 마우스 올려댔을때 포인터가 바뀜 */
+/* click color picker << 구글 확장 프로그램 */
+/* flex 정렬의 기본 속성은 stretch (늘어남) 이라서 정렬ㅇ르 넣어줘야 안늘어남 ㅇ3ㅇ */
